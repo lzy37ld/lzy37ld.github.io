@@ -49,6 +49,9 @@
   font-size: 14px;
   color: #666;
 }
+.container .about-box .right {
+  margin-top: 37px;
+}
 .container .about-box .right h1 {
   margin-bottom: 15px;
   color: #383838;
