@@ -1,0 +1,360 @@
+.container {
+    width: 650px;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #4a4a4a;
+
+    .header {
+        display: flex;
+        font-size: 19px;
+        a {
+            color: #4f86c6;
+            &:nth-child(1) {
+                padding-right: 15px;
+                margin-right: 15px;
+                border-right: 2px dotted;
+                border-color: #090cdc;
+            }
+        }
+    }
+    .about-box {
+        display: grid;
+        grid-template-columns: 200px 1fr;  // 左侧固定宽度，右侧自适应
+        gap: 50px;  // 列间距
+        margin-top: 70px;
+        align-items: start;  // 顶部对齐
+
+        .avatar-wrap {
+            width: 240px;
+            margin-left: -20px; // 向左移动 20px
+            // 移除 height: 490px; 让高度自适应内容
+            &:hover {
+                .img {
+                    &.first {
+                        display: none;
+                    }
+                    &.last {
+                        display: block;
+                    }
+                }
+            }
+            .img {
+                width: 240px;
+                height: 426.66px;
+                &.last {
+                    display: none;
+                }
+            }
+            .sidenote {
+                margin-top: 30px;
+                font-size: 14px;
+                color: #666;
+            }
+        }
+        .right {
+            // margin-top: -10px;  // 添加这一行来向上移动 right 部分
+            h1 {
+                margin-bottom: 15px;
+                color: #383838;
+                font-size: 20px;
+                font-weight: bold;
+
+                span {
+                    color: #2bbc8a;
+                    display: inline-block;
+                    letter-spacing: 0.01em;
+                    font-weight: 700;
+                    font-style: normal;
+                    font-size: 1.5em;
+                    -moz-osx-font-smoothing: grayscale;
+                    -webkit-font-smoothing: antialiased;
+                }
+            }
+            p {
+                font-size: 16px;  // 稍微减小字体大小
+                line-height: 1.6;  // 调整行高
+                margin-bottom: 20px;  // 增加段落间距
+                color: #4a4a4a;  // 调整颜色，使其不那么突兀
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;  // 使用更现代的字体栈
+                -webkit-font-smoothing: antialiased;  // 改善字体渲染
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            // 为链接添加样式
+            a {
+                color: #2bbc8a;  // 使用与名字相同的颜色
+                text-decoration: none;
+                border-bottom: 1px solid #2bbc8a;
+                transition: border-bottom-color 0.2s ease;
+
+                &:hover {
+                    border-bottom-color: transparent;
+                }
+            }
+
+            // 为列表添加样式
+            ul {
+                padding-left: 10px;
+                margin-bottom: 10px;
+                li {
+                    font-size: 16px;  // 与段落文本大小一致
+                    line-height: 1.6;  // 与段落文本行高一致
+                    margin-bottom: 10px;
+                    position: relative;
+                    color: #4a4a4a;  // 与段落文本颜色一致
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;  // 与段落文本字体一致
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+
+                    &::before {
+                        content: "•";
+                        color: #2bbc8a;
+                        position: absolute;
+                        left: -15px;
+                        font-size: 18px;  // 稍微增大圆点大小
+                        line-height: 1;  // 确保圆点垂直居中
+                    }
+                }
+            }
+        }
+    }
+    .links {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        span {
+            font-size: 16px;
+            font-family: Arial, sans-serif; // 为 "Find me at" 部分设置不同的字体
+        }
+        a {
+            width: 20px;
+            height: 20px;
+            &+a {
+                margin-left: 6px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .first {
+            transform: translateY(3px);
+        }
+    }
+    .news-box {
+        .news-title {
+            margin: 30px 0;
+            color: #4f86c6;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .list {
+            max-height: 300px; // 设置一个初始最大高度
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+
+            &.expanded {
+                max-height: 2000px; // 一个足够大的值，以显示所有内容
+            }
+
+            position: relative; // 添加这行，为绝对定位的子元素提供参考
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 13.2px; // 调整位置以对齐箭头
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background-color: #e0e0e0; // 使用与分隔线相同的颜色
+            }
+
+            .item {
+                position: relative;
+                padding-left: 30px;
+                margin-bottom: 10px;  // 增加每个 item 之间的间距
+                padding-bottom: 20px; // 添加底部内边距
+
+                &::before {
+                    content: "\f01b";
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 400;  // 使用 regular 样式
+                    position: absolute;
+                    left: 0;
+                    top: 0;  // 将箭头移到顶部对齐
+                    color: #de1177;
+                    font-size: 20px;
+                    line-height: 1;  // 确保图标自身的行高为1
+                    background-color: #fff; // 添加白色背景，覆盖竖线
+                    padding: 0 5px; // 给图标添加一些内边距
+                    z-index: 1; // 确保图标在线的上面
+                }
+
+                // 移除原来的分隔线
+                &:not(:last-child)::after {
+                    display: none;
+                }
+
+                .date {
+                    color: #383838;
+                    font-size: 16px;
+                    font-weight: bold;
+                    line-height: 20px;  // 设置行高与图标大小一致
+                }
+
+                .content {
+                    padding: 20px 0;
+                    text-align: left; // 改为左对齐，通常更易读
+                    line-height: 1.2; // 稍微减小行高
+                    font-family: 'Arial', sans-serif; // 使用更现代的无衬线字体
+                    font-size: 14px; // 设置合适的字体大小
+                    color: #080808; // 深灰色文字，不要太黑
+                    letter-spacing: 0.1px; // 稍微增加字间距
+                    a {
+                        font-weight: bold;
+                        text-decoration: underline;
+                    }
+                    span {
+                        font-weight: bold;
+                        color: #870f0f;
+                    }
+                }
+            }
+        }
+        .view-more-container {
+            text-align: center;
+            margin-top: 10px;  // 将 margin-top 从 30px 减少到 20px
+            padding: 5px 0;   // 将 padding 从 15px 减少到 10px
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .view-more-btn {
+            background: none;
+            border: 2px solid #409eff;
+            color: #409eff;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                background-color: #409eff;
+                color: #fff;
+            }
+
+            span {
+                margin-right: 10px;
+            }
+
+            i {
+                transition: transform 0.3s ease;
+            }
+
+            &.expanded i {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .publications-box {
+        .publications-title {
+            margin: 30px 0;
+            color: #4f86c6;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .desc {
+            padding-bottom: 30px;
+            color: #383838;
+            font-size: 14px;
+            a{
+                text-decoration: underline;
+            }
+        }
+        .list {
+            .item {
+                &+.item {
+                    margin-top: 30px;
+                }
+                .item-title {
+                    color: #383838;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                .names {
+                    margin: 10px 0;
+                    font-size: 14px;
+                    line-height: 1.7;
+                    text-align: justify;
+                    span {
+                        color: #4f86c6;
+                    }
+                }
+                h3 {
+                    font-size: 14px;
+                    span {
+                        font-weight: bold;
+                        
+                    }
+                    .first {
+                        color: #666;
+                    }
+                    .last {
+                        color: #df1a7d;
+                    }
+                    a {
+                        font-size: 14px;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .contact-box {
+        padding-top: 50px;
+        .contact-title {
+            margin: 30px 0;
+            color: #4f86c6;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 16px;
+            span {
+                font-weight: bold;
+            }
+        }
+        h3 {
+            margin-top: 15px;
+            font-size: 16px;
+        }
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 80px;
+        margin-bottom: 30px;
+        font-size: 12px;
+        .right {
+            display: flex;
+            a {
+                text-decoration: underline;
+                &:first-child {
+                    padding-right: 15px;
+                    margin-right: 15px;
+                    border-right: 1px solid;
+                    border-color: #666;
+                }
+            }
+        }
+    }
+}
