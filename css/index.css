@@ -139,12 +139,14 @@
 }
 .container .news-box .list {
   max-height: 300px;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   transition: max-height 0.5s ease;
   position: relative;
 }
 .container .news-box .list.expanded {
-  max-height: 2000px;
+  max-height: none;
+  overflow: visible;
 }
 .container .news-box .list::before {
   content: '';
@@ -249,6 +251,11 @@
 }
 .container .publications-box .desc a {
   text-decoration: underline;
+}
+.container .publications-box .list {
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 10px;
 }
 .container .publications-box .list .item + .item {
   margin-top: 30px;
