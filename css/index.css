@@ -258,6 +258,19 @@
   font-size: 20px;
   font-weight: bold;
 }
+.container .publications-box .list .item .tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+.container .publications-box .list .item .tag.tag-oral {
+  background-color: #c0392b;
+  color: #fff;
+}
 .container .publications-box .list .item .names {
   margin: 10px 0;
   font-size: 14px;
