@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
     <!-- 添加 Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- 添加 Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 496 512'><path fill='currentColor' d='M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm0 376c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm0-128c-53.02 0-96 42.98-96 96s42.98 96 96 96c-106.04 0-192-85.96-192-192S141.96 64 248 64c53.02 0 96 42.98 96 96s-42.98 96-96 96z'/></svg>" type="image/svg+xml">
     
@@ -20,39 +20,46 @@
         </div>
         <div class="about-box">
             <div class="avatar-wrap">
-                <img src="./images/yinyang2.png" alt="" class="img first">
-                <img src="./images/me.png" alt="" class="img last">
-                <div class="links">
-                    <span>Find me at&nbsp;
-                    <a target="_blank" href="https://twitter.com/LiaoZeyi"><i class="fab fa-twitter-square"></i></a>,
-                    <a target="_blank" href="https://github.com/lzy37ld"><i class="fab fa-github"></i></a>,
-                    <a target="_blank" href="images/LZY_CV.pdf"><i class="fa-solid fa-file-lines"></i></a>,
-                    and
-                    <a target="_blank" href="https://scholar.google.com/citations?user=vpv_bHEAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i></a>
-                    </span>
+                <div class="avatar">
+                    <img src="./images/yinyang2.png" alt="" class="img first">
+                    <img src="./images/me.png" alt="" class="img last">
+                    <span class="avatar-badge"><i class="fa-solid fa-user"></i></span>
                 </div>
+                <div class="tap-hint">This is Yin-Yang. Click me?</div>
                 <div class="sidenote">
-                    <p>Side note1: Sort of out of shape now. BUT! I am trying to keep doing exercise and living in a healthier manner now! Hope to find better me soon! Stay tuned!</p>
-                    <br> <!-- 添加一个换行标签来增加间距 -->
-                    <p>Side note2: This is <a href="https://en.wikipedia.org/wiki/Yin_and_yang">Yin-Yang</a> and I'm trying to integrate the concept of yin and yang into my daily life. </p>
+                    <p>This is <a href="https://en.wikipedia.org/wiki/Yin_and_yang">Yin-Yang</a> and I'm trying to integrate the concept of yin and yang into my daily life.</p>
                 </div>
             </div>
             <div class="right">
                 <h1>Hi, I'm <span>Zeyi Liao</span>.</h1>
-                <p>I'm a third-year PhD student fortunately advised by <a href="https://u.osu.edu/ihudas/people/">Prof. Huan Sun</a> at OSU. Before that, I worked with <a href="https://www.seanre.com/">Prof. Xiang Ren</a> during my Master study at USC and obtained my Bachelor's degree from BJTU.</p>
-                <p>I'm broadly interested in AI with a focus on NLP and multimodal AI. My career goal is to build helpful <em><u>yet</u></em> robust and trustworthy AI system to make life easier.</p>
-                <p>My current research preference (subject to change):</p>
-                <ul>
-                  <li>Critically examining and challenging so-called "true claims" in AI through retrospective analysis</li>
-                  <li>Delving beyond superficial observations to uncover the underlying mechanisms and principles</li>
-                </ul>
-                <p><strong>Fun Fact</strong> (Aug 2024): I am just aware that my first paper AmpleGCG has aligned my above two preferences. So lucky am I. </p>
+                <p>I'm a fourth-year Ph.D student, fortunately advised by <a href="https://u.osu.edu/ihudas/people/">Prof. Huan Sun</a> at OSU. Before that, I worked with <a href="https://www.seanre.com/">Prof. Xiang Ren</a> during my Master study at USC and obtained my Bachelor's degree from BJTU.</p>
+                <p>I am broadly interested in AI agent developments with a goal to build helpful <u>yet aligned</u> agent systems that benefit humanity. My current focus is on agent safety/security/alignment by ensuring that increasingly powerful agents remain reliable, controllable, and aligned with human intent as they learn and act in the real world.</p>
+                <p>I believe AI models have crossed a critical capability threshold for general-purpose work. My next mission is to harness the rogue AI and build trustworthy autonomy.</p>
+                <div class="links">
+                    <span class="links-label">Find me at</span>
+                    <a target="_blank" href="https://twitter.com/LiaoZeyi"><i class="fa-brands fa-x-twitter"></i>X</a>
+                    <a target="_blank" href="images/LZY_CV.pdf"><i class="fa-solid fa-file-lines"></i>CV</a>
+                    <a target="_blank" href="https://scholar.google.com/citations?user=vpv_bHEAAAAJ&hl=en"><i class="fa-solid fa-graduation-cap"></i>Google Scholar</a>
+                </div>
             </div>
         </div>
         
         <div class="news-box">
             <div class="news-title">What's New</div>
+            <div class="news-panel">
             <div class="list">
+                <div class="item">
+                    <div class="date">Sep 2026</div>
+                    <div class="content">
+                        We are thrilled to release <a target="_blank" href="https://x.com/NeoCognition/status/2098147185657565391">ApprenticeBench</a>, the first end-to-end benchmark for long-horizon continual learning of computer-use agents, grounded in real, complex jobs. Agents no longer need FDEs to be onboarded&mdash;they deploy themselves into the job and keep learning on it. Check out the release post <a target="_blank" href="https://x.com/NeoCognition/status/2098147185657565391">here</a>!
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="date">Apr 2026</div>
+                    <div class="content">
+                        I joined <a target="_blank" href="https://neocognition.io/">NeoCognition</a>, working on continual learning.
+                    </div>
+                </div>
                 <div class="item">
                     <div class="date">Feb 2026</div>
                     <div class="content">
@@ -160,7 +167,6 @@
                         Finally, our paper <span>"In Search of the Long-Tail: Systematic Generation of Long-Tail Knowledge via Logical Rule Guided Search"</span> is <a target="_blank" href="https://arxiv.org/pdf/2311.07237">arxived</a>. One take I have is that: always play around with the long-tail data to examnie the true capability of models. I feel incredibly fortunate to have the opportunity to collaborate with renowned advisors like Yejin Choi and Xiang Ren, especially considering I've only been studying NLP for less than one year.
                     </div>
                 </div>
-
                 <div class="item">
                     <div class="date">Aug 2023</div>
                     <div class="content">
@@ -168,6 +174,7 @@
                     </div>
                 </div>
 
+            </div>
             </div>
             <div class="view-more-container">
                 <button class="view-more-btn">
@@ -178,62 +185,43 @@
         </div>
         <div class="publications-box">
             <div class="publications-title">Selected Publications</div>
-            <div class="desc" style="margin-top: -20px;">(Find here&nbsp<a target="_blank" href="https://scholar.google.com/citations?user=vpv_bHEAAAAJ&hl=en&oi=ao"><i class="fas fa-graduation-cap"></i></a> for the full list.)</div>
+            <div class="desc">(Find here&nbsp<a target="_blank" href="https://scholar.google.com/citations?user=vpv_bHEAAAAJ&hl=en&oi=ao"><i class="fas fa-graduation-cap"></i></a> for the full list.)</div>
             <div class="list">
                 <div class="item">
                     <div class="item-title">RedTeamCUA: Realistic Adversarial Testing of Computer-Use Agents in Hybrid Web-OS Environments
                     </div>
-                    <p class="names"><u>Zeyi Liao</u>*, Jaylen Jones*, Linxi Jiang*, Eric Fosler-Lussier, Yu Su, Zhiqiang Lin, Huan Sun</p>
-                    <h3><span class="first">International Conference on Learning Representations (ICLR), 2026</span> <span class="tag tag-oral">Oral</span> <a target="_blank" href="https://arxiv.org/abs/2505.21936">PDF</a>, <a target="_blank" href="https://osu-nlp-group.github.io/RedTeamCUA/">Page</a></h3>
+                    <p class="names"><span class="me">Zeyi Liao</span>*, Jaylen Jones*, Linxi Jiang*, Eric Fosler-Lussier, Yu Su, Zhiqiang Lin, Huan Sun</p>
+                    <h3 class="venue"><span class="first">ICLR 2026</span> <span class="tag tag-oral">Oral</span> <a target="_blank" href="https://arxiv.org/abs/2505.21936">PDF</a> <a target="_blank" href="https://osu-nlp-group.github.io/RedTeamCUA/">Page</a></h3>
+                    <h3 style="margin-top: 15px;"><i class="fas fa-angle-right note-icon"></i>The only safety benchmark adopted in the <a target="_blank" href="https://arxiv.org/abs/2608.02352">Qwen-CUA</a></h3>
                 </div>
                 <div class="item">
                     <div class="item-title">EIA: Environmental Injection Attack on Generalist Web Agents for Privacy Leakage</div>
-                    <p class="names"><u>Zeyi Liao</u>*, Lingbo Mo*, Chejian Xu, Mintong Kang, Jiawei Zhang, Chaowei Xiao, Yuan Tian, Bo Li, Huan Sun</p>
-                    <h3><span class="first">International Conference on Learning Representations (ICLR), 2025</span> <a target="_blank" href="https://arxiv.org/pdf/2409.11295">PDF</a></h3>
-                    <h3 style="margin-top: 15px;">Selected as course materials for <a target="_blank" href="https://cseweb.ucsd.edu/~efernandes/teaching/cse291wi25/cse291.html">UCSD CSE 291 (LLM Security)</a></h3>
+                    <p class="names"><span class="me">Zeyi Liao</span>*, Lingbo Mo*, Chejian Xu, Mintong Kang, Jiawei Zhang, Chaowei Xiao, Yuan Tian, Bo Li, Huan Sun</p>
+                    <h3 class="venue"><span class="first">ICLR 2025</span> <a target="_blank" href="https://arxiv.org/pdf/2409.11295">PDF</a></h3>
+                    <h3 style="margin-top: 15px;"><i class="fas fa-angle-right note-icon"></i>Selected as course materials for <a target="_blank" href="https://cseweb.ucsd.edu/~efernandes/teaching/cse291wi25/cse291.html">UCSD CSE 291 (LLM Security)</a></h3>
+                    <h3 style="margin-top: 15px;"><i class="fas fa-angle-right note-icon"></i>Incorporated into UC Berkeley RDI's <a target="_blank" href="https://rdi.berkeley.edu/superred/">SuperRed</a></h3>
                 </div>
                 <div class="item">
                     <div class="item-title">AmpleGCG: Learning a universal and transferable generative model of adversarial suffixes for jailbreaking both open and closed llms</div>
-                    <p class="names"><u>Zeyi Liao</u>, Huan Sun</p>
-                    <h3><span class="first">Conference on Language Modeling (COLM), 2024</span> <a target="_blank" href="https://arxiv.org/pdf/2404.07921">PDF</a></h3>, 
-                    <h3><a target="_blank" href="https://twitter.com/LiaoZeyi/status/1828613837756490112"><i class="fab fa-twitter-square"></i> </a> and <a target="_blank" href="https://arxiv.org/abs/2410.22143">PDF</a> about AmpleGCG-plus</h3>
-
-                    <h3 style="margin-top: 15px;">Discussed by <a target="_blank" href="https://newsletter.danielpaleka.com/i/143659818/amplegcg-learning-a-universal-and-transferable-generative-model-of-adversarial-suffixes-for-jailbreaking-both-open-and-closed-llms">AI safety news</a></h3>
-                </div>
-                <div class="item">
-                    <div class="item-title">Joint Demonstration and Preference Learning Improves Policy Alignment with Human Feedback</div>
-                    <p class="names">Chenliang Li, Siliang Zeng*, <u>Zeyi Liao</u>*, Jiaxiang Li, Dongyeop Kang, Alfredo Garcia, Mingyi Hong</p>
-                    <h3><span class="first">International Conference on Learning Representations (ICLR), 2025</span> <a target="_blank" href="https://arxiv.org/pdf/2406.06874">PDF</a></h3>
+                    <p class="names"><span class="me">Zeyi Liao</span>, Huan Sun</p>
+                    <h3 class="venue"><span class="first">COLM 2024</span> <a target="_blank" href="https://arxiv.org/pdf/2404.07921">PDF</a></h3>
+                    <h3 style="margin-top: 15px;"><i class="fas fa-angle-right note-icon"></i>Discussed by <a target="_blank" href="https://newsletter.danielpaleka.com/i/143659818/amplegcg-learning-a-universal-and-transferable-generative-model-of-adversarial-suffixes-for-jailbreaking-both-open-and-closed-llms">AI safety news</a></h3>
+                    <h3 style="margin-top: 15px;"><i class="fas fa-angle-right note-icon"></i>Follow-up work: AmpleGCG-plus <a target="_blank" href="https://arxiv.org/abs/2410.22143">PDF</a></h3>
                 </div>
                 <div class="item">
                     <div class="item-title">WebGuard: Building a Generalizable Guardrail for Web Agents                    </div>
-                    <p class="names">Boyuan Zheng, <u>Zeyi Liao</u>, Scott Salisbury, Zeyuan Liu, Michael Lin, Qinyuan Zheng, Zifan Wang, Xiang Deng, Dawn Song, Huan Sun, Yu Su</p>
-                    <h3><span class="first">Preprint on Arxiv, 2025</span> <a target="_blank" href="https://arxiv.org/abs/2507.14293">PDF</a></h3>
+                    <p class="names">Boyuan Zheng, <span class="me">Zeyi Liao</span>, Scott Salisbury, Zeyuan Liu, Michael Lin, Qinyuan Zheng, Zifan Wang, Xiang Deng, Dawn Song, Huan Sun, Yu Su</p>
+                    <h3 class="venue"><span class="first">arXiv 2025</span> <a target="_blank" href="https://arxiv.org/abs/2507.14293">PDF</a></h3>
                 </div>
                 <div class="item">
-                    <div class="item-title">AttributionBench: How Hard is Automatic Attribution Evaluation?</div>
-                    <p class="names">Yifei Li, Xiang Yue, <u>Zeyi Liao</u>, Huan Sun</p>
-                    <h3><span class="first">Annual Conference of the Association for Computational Linguistics (Findings of ACL), 2024</span> <a target="_blank" href="https://arxiv.org/pdf/2402.15089">PDF</a></h3>
+                    <div class="item-title">Agent Learning via Early Experience</div>
+                    <p class="names">Kai Zhang, Xiangchao Chen*, Bo Liu*, Tianci Xue*, <span class="me">Zeyi Liao</span>*, Zhihan Liu*, Xiyao Wang*, Yuting Ning*, Zhaorun Chen*, Xiaohan Fu, Jian Xie, Yuxuan Sun, Boyu Gou, et al.</p>
+                    <h3 class="venue"><span class="first">ICML 2026</span> <a target="_blank" href="https://arxiv.org/abs/2510.08558">PDF</a></h3>
                 </div>
                 <div class="item">
-                    <div class="item-title">A Trembling House of Cards? Mapping Adversarial Attacks against Language Agents</div>
-                    <p class="names">Lingbo Mo, <u>Zeyi Liao</u>, Boyuan Zheng, Yu Su, Chaowei Xiao, Huan Sun</p>
-                    <h3><span class="first">Preprint on Arxiv, 2024</span> <a target="_blank" href="https://arxiv.org/pdf/2402.10196">PDF</a></h3>
-                </div>
-                <div class="item">
-                    <div class="item-title">In Search of the Long-Tail: Systematic Generation of Long-Tail Knowledge via Logical Rule Guided Search</div>
-                    <p class="names">Huihan Li, <u>Zeyi Liao</u>*, Yuting Ning*, Siyuan Wang, Xiang Lorraine Li, Ximing Lu, Faeze Brahman, Wenting Zhao, Yejin Choi, Xiang Ren</p>
-                    <h3><span class="first">Empirical Methods in Natural Language Processing (EMNLP), 2024</span> <a target="_blank" href="https://arxiv.org/pdf/2311.07237">PDF</a></h3>
-                </div>
-                <div class="item">
-                    <div class="item-title">Chatcounselor: A large language models for mental health support</div>
-                    <p class="names">June M Liu, Donghao Li, He Cao, Tianhe Ren, <u>Zeyi Liao</u>, Jiamin Wu</p>
-                    <h3><span class="first">ACM International Conference on Information and Knowledge Management (CIKM), 2023</span> <a target="_blank" href="https://arxiv.org/pdf/2309.15461">PDF</a></h3>
-                </div>
-                <div class="item">
-                    <div class="item-title">RobustLR: A diagnostic benchmark for evaluating logical robustness of deductive reasoners</div>
-                    <p class="names">Soumya Sanyal, <u>Zeyi Liao</u>, Xiang Ren</p>
-                    <h3><span class="first">Conference on Empirical Methods in Natural Language Processing (EMNLP), 2022</span> <a target="_blank" href="https://aclanthology.org/2022.emnlp-main.653.pdf">PDF</a></h3>
+                    <div class="item-title">Joint Demonstration and Preference Learning Improves Policy Alignment with Human Feedback</div>
+                    <p class="names">Chenliang Li, Siliang Zeng*, <span class="me">Zeyi Liao</span>*, Jiaxiang Li, Dongyeop Kang, Alfredo Garcia, Mingyi Hong</p>
+                    <h3 class="venue"><span class="first">ICLR 2025</span> <a target="_blank" href="https://arxiv.org/pdf/2406.06874">PDF</a></h3>
                 </div>
             </div>
         </div>
