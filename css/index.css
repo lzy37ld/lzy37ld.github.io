@@ -13,19 +13,6 @@
 .container a {
   color: inherit;
 }
-.container .header {
-  display: flex;
-  font-size: 19px;
-}
-.container .header a {
-  color: #4f86c6;
-}
-.container .header a:nth-child(1) {
-  padding-right: 15px;
-  margin-right: 15px;
-  border-right: 2px dotted;
-  border-color: #090cdc;
-}
 .container .about-box {
   display: grid;
   grid-template-columns: 200px 1fr;
@@ -425,9 +412,6 @@
 @media (max-width: 700px) {
   .container {
     padding-top: 20px;
-  }
-  .container .header {
-    font-size: 17px;
   }
   .container .about-box {
     grid-template-columns: 1fr;
