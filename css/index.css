@@ -434,12 +434,19 @@
   }
   .container .links {
     flex-wrap: wrap;
-    gap: 6px 16px;
-    padding: 10px 16px;
+    gap: 6px 12px;
+    padding: 10px 12px;
   }
   .container .links .links-label {
     flex: 0 0 100%;
     text-align: center;
+    font-size: 14px;
+  }
+  .container .about-box .right .links a {
+    gap: 5px;
+    font-size: 13px;
+  }
+  .container .links a i {
     font-size: 14px;
   }
   .container .about-box .avatar-wrap .tap-hint {
