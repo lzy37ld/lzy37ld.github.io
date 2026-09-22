@@ -331,6 +331,10 @@
   font-weight: 700;
   color: #222;
 }
+.container .publications-box .list .item .names .etal {
+  color: #999;
+  font-style: italic;
+}
 .container .publications-box .list .item h3 {
   font-size: 14px;
 }
